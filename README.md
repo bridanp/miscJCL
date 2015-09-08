@@ -1,2 +1,2 @@
 # miscJCL
-Miscellaneous JCL I've created over the years for specific tasks.  
+Miscellaneous mainframe JCL I've created over the years for specific tasks.  
