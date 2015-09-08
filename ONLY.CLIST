@@ -1,0 +1,9 @@
+ISREDIT MACRO (PARM1)
+  /* Code used as a mainframe CLIST to exclude everything but the requested */
+  /* ADD CODE TO CHECK FOR PARM1; RC=12 IF NOT */ 
+ISREDIT EXCLUDE ALL                                 
+ISREDIT FIND ALL &PARM1                             
+ISREDIT (FINDCNT, FINDLINE) = FIND_COUNTS           
+SET &ZEDSMSG = &FINDLINE LINES DISPLAYED            
+SET &ZEDLMSG = &PARM1 WAS FOUND ON &FINDLINE LINES  
+ EXIT CODE(0)                                       
